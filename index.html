@@ -1,0 +1,1356 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>性感美女热舞_舞力社区 - 原创舞蹈影像品牌官网</title>
+<meta name="description" content="性感美女热舞官方网站，专注原创热舞影像与舞蹈创作者社区，深耕垂直领域精品内容，打造值得信赖的舞蹈内容生态，官方发布持续运营中。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181822'/%3E%3Cpath d='M26 20l20 12-20 12z' fill='%23ff3d7f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --hd-bg:#12121a;
+  --hd-bg2:#1a1a26;
+  --hd-card:#1f1f2d;
+  --hd-line:#33334a;
+  --hd-txt:#ececf4;
+  --hd-mut:#9a9ab4;
+  --hd-neon:#ff3d7f;
+  --hd-lime:#b6ff3d;
+  --hd-violet:#8a5cff;
+  --hd-radius:16px;
+  --hd-head:118px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hd-head)}
+body{
+  background:var(--hd-bg);
+  color:var(--hd-txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.hd-wrap{width:min(1180px,92vw);margin:0 auto}
+.hd-sticky{position:sticky;top:0;z-index:100}
+
+/* 公告条 */
+.hd-notice{
+  background:linear-gradient(90deg,#ff3d7f,#8a5cff 60%,#2b2b44);
+  color:#fff;font-size:13px;
+  display:flex;align-items:center;gap:12px;
+  padding:8px 0;
+}
+.hd-notice .hd-wrap{display:flex;align-items:center;gap:12px;overflow:hidden}
+.hd-notice-badge{
+  flex:0 0 auto;background:rgba(0,0,0,.28);border-radius:20px;
+  padding:1px 10px;font-size:12px;letter-spacing:.5px;
+}
+.hd-notice-track{flex:1;overflow:hidden;position:relative;height:22px}
+.hd-notice-track ul{
+  position:absolute;inset:0;list-style:none;
+  animation:hd-slide 18s infinite;
+}
+.hd-notice-track li{height:22px;line-height:22px;white-space:nowrap}
+@keyframes hd-slide{
+  0%,22%{transform:translateY(0)}
+  25%,47%{transform:translateY(-22px)}
+  50%,72%{transform:translateY(-44px)}
+  75%,97%{transform:translateY(-66px)}
+  100%{transform:translateY(-66px)}
+}
+.hd-notice-link{flex:0 0 auto;font-size:12px;border:1px solid rgba(255,255,255,.6);border-radius:20px;padding:1px 12px}
+
+/* 页头 */
+.hd-header{
+  background:rgba(18,18,26,.92);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--hd-line);
+}
+.hd-nav-row{display:flex;align-items:center;gap:26px;padding:14px 0}
+.hd-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.5px;flex:0 0 auto}
+.hd-logo-mark{
+  width:36px;height:36px;border-radius:10px;
+  background:linear-gradient(135deg,#ff3d7f,#8a5cff);
+  display:grid;place-items:center;font-size:16px;color:#fff;
+  box-shadow:0 0 18px rgba(255,61,127,.5);
+}
+.hd-logo small{display:block;font-size:10px;color:var(--hd-mut);font-weight:400;letter-spacing:2px}
+.hd-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+.hd-nav a{
+  padding:6px 13px;border-radius:9px;font-size:14px;color:#cfcfe2;
+  transition:.2s;
+}
+.hd-nav a:hover{background:#26263a;color:#fff}
+.hd-nav a.hd-nav-on{color:#fff;background:linear-gradient(120deg,rgba(255,61,127,.28),rgba(138,92,255,.28))}
+.hd-head-tools{display:flex;align-items:center;gap:10px}
+.hd-search{position:relative;display:flex;align-items:center}
+.hd-search input{
+  width:170px;background:#22223200;background:#222232;border:1px solid var(--hd-line);
+  color:var(--hd-txt);border-radius:22px;padding:7px 36px 7px 14px;font-size:13px;outline:none;
+  transition:.25s;
+}
+.hd-search input:focus{width:216px;border-color:var(--hd-neon);box-shadow:0 0 0 3px rgba(255,61,127,.15)}
+.hd-search button{position:absolute;right:6px;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:var(--hd-mut)}
+.hd-search button:hover{color:var(--hd-neon)}
+.hd-search-tip{
+  position:absolute;top:44px;right:0;width:250px;background:var(--hd-card);
+  border:1px solid var(--hd-line);border-radius:12px;padding:10px 12px;font-size:12.5px;
+  color:var(--hd-mut);display:none;box-shadow:0 14px 30px rgba(0,0,0,.45);z-index:60;
+}
+.hd-search-tip.hd-show{display:block}
+.hd-search-tip b{color:var(--hd-lime)}
+.hd-burger{display:none;width:38px;height:38px;border-radius:10px;background:#222232;place-items:center;font-size:18px}
+
+/* 首屏 */
+.hd-hero{
+  position:relative;overflow:hidden;
+  padding:62px 0 70px;
+  background:
+    radial-gradient(700px 380px at 82% 8%,rgba(138,92,255,.28),transparent 70%),
+    radial-gradient(560px 320px at 10% 92%,rgba(255,61,127,.22),transparent 70%),
+    var(--hd-bg);
+}
+.hd-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hd-hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1px;
+  color:var(--hd-lime);border:1px solid rgba(182,255,61,.35);border-radius:22px;padding:4px 14px;
+  background:rgba(182,255,61,.07);margin-bottom:20px;
+}
+.hd-h1{
+  font-size:clamp(34px,5.2vw,58px);line-height:1.15;font-weight:900;letter-spacing:1px;
+  background:linear-gradient(100deg,#fff 20%,#ff8fb6 55%,#b6ff3d);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:8px;
+}
+.hd-hero-sub{font-size:15px;color:var(--hd-mut);letter-spacing:2px;margin-bottom:22px}
+.hd-hero-intro{font-size:15px;color:#c6c6da;max-width:560px}
+.hd-hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:28px 0 30px}
+.hd-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:26px;padding:11px 26px;
+  font-size:14.5px;font-weight:600;transition:.25s;border:1px solid transparent;
+}
+.hd-btn-main{background:linear-gradient(120deg,#ff3d7f,#8a5cff);color:#fff;box-shadow:0 10px 26px rgba(255,61,127,.32)}
+.hd-btn-main:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,61,127,.44)}
+.hd-btn-ghost{border-color:var(--hd-line);color:#dcdcef;background:#1e1e2c}
+.hd-btn-ghost:hover{border-color:var(--hd-lime);color:var(--hd-lime)}
+.hd-kpis{display:flex;gap:34px;flex-wrap:wrap}
+.hd-kpi b{display:block;font-size:26px;font-weight:800;color:#fff}
+.hd-kpi b span{font-size:14px;color:var(--hd-neon);margin-left:2px}
+.hd-kpi em{font-style:normal;font-size:12.5px;color:var(--hd-mut)}
+.hd-hero-visual{position:relative}
+.hd-hero-cover{
+  border-radius:22px;overflow:hidden;border:1px solid var(--hd-line);
+  box-shadow:0 26px 60px rgba(0,0,0,.55);position:relative;
+}
+.hd-hero-cover img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.hd-hero-badge{
+  position:absolute;left:16px;top:16px;background:rgba(10,10,16,.72);
+  border:1px solid rgba(255,61,127,.6);color:#ffd0e0;border-radius:20px;
+  font-size:12px;padding:3px 12px;backdrop-filter:blur(6px);
+}
+.hd-hero-float{
+  position:absolute;right:-14px;bottom:-18px;background:var(--hd-card);
+  border:1px solid var(--hd-line);border-radius:16px;padding:12px 18px;
+  display:flex;align-items:center;gap:12px;box-shadow:0 16px 36px rgba(0,0,0,.5);
+}
+.hd-hero-float i{font-style:normal;font-size:22px;color:var(--hd-lime)}
+.hd-hero-float b{display:block;font-size:15px}
+.hd-hero-float em{font-style:normal;font-size:11.5px;color:var(--hd-mut)}
+
+/* 通用区块 */
+.hd-section{padding:74px 0}
+.hd-section.hd-alt{background:var(--hd-bg2);border-top:1px solid var(--hd-line);border-bottom:1px solid var(--hd-line)}
+.hd-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.hd-sec-eyebrow{font-size:12.5px;letter-spacing:3px;color:var(--hd-neon);font-weight:700;margin-bottom:8px}
+.hd-h2{font-size:clamp(24px,3.3vw,34px);font-weight:800;letter-spacing:.5px;line-height:1.3}
+.hd-h2 em{font-style:normal;color:var(--hd-lime)}
+.hd-sec-desc{font-size:14px;color:var(--hd-mut);max-width:520px}
+.hd-sec-more{font-size:13.5px;color:var(--hd-lime);border-bottom:1px dashed rgba(182,255,61,.5);padding-bottom:2px}
+.hd-h3{font-size:17.5px;font-weight:700;line-height:1.45;margin-bottom:8px}
+
+/* 焦点内容 */
+.hd-focus-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:26px}
+.hd-vcard{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:var(--hd-radius);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.hd-vcard:hover{transform:translateY(-5px);border-color:rgba(255,61,127,.5);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.hd-vcover{position:relative;overflow:hidden;background:#0e0e16}
+.hd-vcover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.hd-vcard:hover .hd-vcover img{transform:scale(1.05)}
+.hd-vplay{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.65));
+  opacity:0;transition:.3s;
+}
+.hd-vcard:hover .hd-vplay{opacity:1}
+.hd-vplay span{
+  width:54px;height:54px;border-radius:50%;background:rgba(255,61,127,.92);
+  display:grid;place-items:center;color:#fff;font-size:18px;box-shadow:0 0 0 8px rgba(255,61,127,.2);
+}
+.hd-vtag{
+  position:absolute;left:12px;top:12px;background:rgba(10,10,16,.72);border:1px solid var(--hd-line);
+  border-radius:14px;font-size:11.5px;padding:2px 10px;color:var(--hd-lime);backdrop-filter:blur(4px);
+}
+.hd-vdur{
+  position:absolute;right:12px;bottom:12px;background:rgba(10,10,16,.78);border-radius:8px;
+  font-size:11.5px;padding:1px 8px;color:#dcdcef;
+}
+.hd-vbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.hd-vmeta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--hd-mut);flex-wrap:wrap}
+.hd-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#0e0e16;flex:0 0 auto;
+}
+.hd-vdesc{font-size:13.5px;color:#b8b8ce}
+.hd-vfoot{display:flex;align-items:center;gap:16px;margin-top:auto;padding-top:6px}
+.hd-act{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--hd-mut);transition:.2s}
+.hd-act:hover{color:var(--hd-neon)}
+.hd-act.hd-on{color:var(--hd-neon)}
+.hd-act.hd-on .hd-act-ico{transform:scale(1.15)}
+.hd-act-ico{transition:.2s;display:inline-block}
+.hd-focus-side{display:grid;grid-template-columns:1fr;gap:18px}
+.hd-mini{display:grid;grid-template-columns:132px 1fr;gap:14px;background:var(--hd-card);border:1px solid var(--hd-line);border-radius:14px;overflow:hidden;transition:.25s}
+.hd-mini:hover{border-color:rgba(182,255,61,.45);transform:translateX(4px)}
+.hd-mini .hd-vcover{border-radius:0}
+.hd-mini .hd-vcover img{aspect-ratio:16/10;height:100%}
+.hd-mini .hd-vtag{left:8px;top:8px;font-size:10.5px;padding:1px 7px}
+.hd-mini-body{padding:10px 12px 10px 0;display:flex;flex-direction:column;gap:5px}
+.hd-mini-body h4{font-size:14px;font-weight:700;line-height:1.45}
+.hd-mini-body p{font-size:12px;color:var(--hd-mut);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* 热门视频流 */
+.hd-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.hd-chip{
+  font-size:13px;padding:6px 16px;border-radius:20px;border:1px solid var(--hd-line);
+  color:#bcbcd2;background:#20202f;transition:.2s;
+}
+.hd-chip:hover{border-color:var(--hd-lime);color:var(--hd-lime)}
+.hd-chip.hd-chip-on{background:linear-gradient(120deg,#ff3d7f,#8a5cff);color:#fff;border-color:transparent}
+.hd-vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.hd-vgrid .hd-vcard.hd-hide{display:none}
+
+/* 专题 */
+.hd-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hd-topic{
+  position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--hd-line);
+  min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;
+  transition:.28s;
+}
+.hd-topic:hover{transform:translateY(-6px);border-color:rgba(255,61,127,.55)}
+.hd-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hd-topic-mask{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,18,.15),rgba(10,10,18,.92))}
+.hd-topic-body{position:relative;padding:18px}
+.hd-topic-body h3{font-size:16.5px;margin-bottom:6px}
+.hd-topic-body p{font-size:12.5px;color:#bcbcd2}
+.hd-topic-state{display:inline-block;margin-top:10px;font-size:11.5px;color:var(--hd-lime);border:1px solid rgba(182,255,61,.4);border-radius:12px;padding:1px 10px}
+
+/* 创作者 */
+.hd-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hd-creator{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:16px;padding:20px;
+  text-align:center;transition:.28s;cursor:pointer;
+}
+.hd-creator:hover{border-color:rgba(138,92,255,.6);transform:translateY(-4px)}
+.hd-creator-ava{
+  width:66px;height:66px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:24px;font-weight:900;color:#12121a;position:relative;
+}
+.hd-creator-ava::after{
+  content:"";position:absolute;inset:-5px;border-radius:50%;
+  border:2px dashed rgba(255,61,127,.5);
+}
+.hd-creator h3{font-size:15.5px}
+.hd-creator span{display:block;font-size:12px;color:var(--hd-neon);margin:3px 0 8px}
+.hd-creator p{font-size:12.5px;color:var(--hd-mut);line-height:1.65}
+.hd-creator-stat{display:flex;justify-content:center;gap:16px;margin-top:12px;font-size:11.5px;color:#a5a5c0}
+.hd-creator-stat b{color:#fff;display:block;font-size:14px}
+
+/* 榜单 */
+.hd-rank-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.hd-rank{background:var(--hd-card);border:1px solid var(--hd-line);border-radius:16px;padding:20px 22px}
+.hd-rank h3{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.hd-rank h3 i{font-style:normal;color:var(--hd-lime);font-size:13px}
+.hd-rank ol{list-style:none;display:flex;flex-direction:column;gap:11px}
+.hd-rank li{display:flex;align-items:center;gap:10px;font-size:13.5px}
+.hd-rank-num{
+  width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:12px;font-weight:800;
+  background:#2b2b40;color:#b9b9cf;flex:0 0 auto;
+}
+.hd-rank li:nth-child(1) .hd-rank-num{background:linear-gradient(120deg,#ff3d7f,#ff8fb6);color:#fff}
+.hd-rank li:nth-child(2) .hd-rank-num{background:linear-gradient(120deg,#8a5cff,#b39dff);color:#fff}
+.hd-rank li:nth-child(3) .hd-rank-num{background:linear-gradient(120deg,#b6ff3d,#d8ff96);color:#12121a}
+.hd-rank-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd-rank-fire{font-size:11.5px;color:var(--hd-mut)}
+
+/* 深度解析 */
+.hd-deep{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:start}
+.hd-deep-visual{border-radius:20px;overflow:hidden;border:1px solid var(--hd-line);position:sticky;top:calc(var(--hd-head) + 20px)}
+.hd-deep-visual img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.hd-deep-text p{font-size:14.5px;color:#c2c2d8;margin-bottom:16px}
+.hd-deep-text h3{font-size:18px;margin:26px 0 10px;color:#fff;padding-left:12px;border-left:3px solid var(--hd-neon)}
+.hd-deep-text h3:first-child{margin-top:0}
+.hd-deep-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.hd-deep-tags span{font-size:12px;color:#c9c9de;background:#26263a;border:1px solid var(--hd-line);border-radius:16px;padding:3px 12px}
+
+/* 随笔 */
+.hd-essay-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.hd-essay{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:16px;padding:24px;
+  transition:.26s;position:relative;overflow:hidden;
+}
+.hd-essay::before{
+  content:"";position:absolute;left:0;top:0;width:3px;height:100%;
+  background:linear-gradient(180deg,#ff3d7f,#8a5cff);opacity:.8;
+}
+.hd-essay:hover{transform:translateY(-4px);border-color:rgba(182,255,61,.45)}
+.hd-essay h3{font-size:16.5px;margin-bottom:10px}
+.hd-essay p{font-size:13.5px;color:#b3b3ca}
+.hd-essay footer{margin-top:16px;font-size:12px;color:var(--hd-mut);display:flex;justify-content:space-between}
+
+/* 用户评价 */
+.hd-comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.hd-comm{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:16px;padding:22px;
+  display:flex;flex-direction:column;gap:12px;
+}
+.hd-comm-head{display:flex;align-items:center;gap:11px}
+.hd-comm-head b{font-size:13.5px}
+.hd-comm-head em{font-style:normal;font-size:11.5px;color:var(--hd-mut);display:block}
+.hd-comm p{font-size:13.5px;color:#bcbcd2;flex:1}
+.hd-stars{color:#ffcb3d;font-size:12.5px;letter-spacing:2px}
+
+/* 灵感 */
+.hd-idea{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center}
+.hd-idea-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hd-idea-card{background:var(--hd-card);border:1px solid var(--hd-line);border-radius:14px;padding:18px;transition:.25s}
+.hd-idea-card:hover{border-color:var(--hd-lime);transform:translateY(-3px)}
+.hd-idea-card b{display:block;font-size:14px;margin-bottom:6px;color:var(--hd-lime)}
+.hd-idea-card p{font-size:12.8px;color:#b3b3ca}
+
+/* 动态 */
+.hd-timeline{position:relative;padding-left:26px}
+.hd-timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,#ff3d7f,#8a5cff,transparent)}
+.hd-tl-item{position:relative;padding-bottom:26px}
+.hd-tl-item:last-child{padding-bottom:0}
+.hd-tl-item::before{
+  content:"";position:absolute;left:-26px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--hd-neon);box-shadow:0 0 0 4px rgba(255,61,127,.18);
+}
+.hd-tl-item time{font-size:12px;color:var(--hd-lime);letter-spacing:1px}
+.hd-tl-item h3{font-size:15.5px;margin:4px 0 5px}
+.hd-tl-item p{font-size:13.5px;color:var(--hd-mut)}
+
+/* FAQ */
+.hd-faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.hd-faq details{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:13px;
+  padding:0 18px;transition:.22s;
+}
+.hd-faq details[open]{border-color:rgba(255,61,127,.55);background:#23232f}
+.hd-faq summary{
+  cursor:pointer;list-style:none;padding:15px 0;font-size:14.5px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.hd-faq summary::-webkit-details-marker{display:none}
+.hd-faq summary::after{content:"+";color:var(--hd-neon);font-size:18px;transition:.25s}
+.hd-faq details[open] summary::after{transform:rotate(45deg)}
+.hd-faq details p{font-size:13.5px;color:#b3b3ca;padding-bottom:16px}
+
+/* 联系 */
+.hd-contact{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.hd-contact-box{background:var(--hd-card);border:1px solid var(--hd-line);border-radius:18px;padding:30px}
+.hd-contact-box h3{font-size:19px;margin-bottom:14px}
+.hd-contact-box p{font-size:14px;color:#b8b8ce;margin-bottom:10px}
+.hd-contact-list{list-style:none;margin:18px 0 22px;display:flex;flex-direction:column;gap:10px}
+.hd-contact-list li{font-size:14px;display:flex;gap:10px;align-items:center;color:#c6c6da}
+.hd-contact-list i{font-style:normal;color:var(--hd-lime)}
+.hd-partners{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.hd-partners span{font-size:12.5px;border:1px dashed var(--hd-line);border-radius:10px;padding:7px 15px;color:#a8a8c0}
+
+/* 页脚 */
+.hd-footer{background:#0d0d14;border-top:1px solid var(--hd-line);padding:54px 0 26px}
+.hd-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;margin-bottom:36px}
+.hd-footer h4{font-size:14px;margin-bottom:14px;color:#fff;letter-spacing:.5px}
+.hd-footer p,.hd-footer li{font-size:13px;color:var(--hd-mut);line-height:2}
+.hd-footer ul{list-style:none}
+.hd-footer a:hover{color:var(--hd-lime)}
+.hd-footer-bottom{border-top:1px solid var(--hd-line);padding-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--hd-mut)}
+
+/* 浮动按钮 */
+.hd-top-btn{
+  position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,#ff3d7f,#8a5cff);color:#fff;display:grid;place-items:center;
+  box-shadow:0 12px 28px rgba(255,61,127,.42);opacity:0;pointer-events:none;transition:.3s;z-index:90;font-size:16px;
+}
+.hd-top-btn.hd-show{opacity:1;pointer-events:auto}
+
+/* Toast */
+.hd-toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,24px);
+  background:#26263a;border:1px solid var(--hd-line);color:#fff;border-radius:26px;
+  padding:10px 24px;font-size:13.5px;opacity:0;pointer-events:none;transition:.32s;z-index:200;
+  box-shadow:0 14px 34px rgba(0,0,0,.55);
+}
+.hd-toast.hd-show{opacity:1;transform:translate(-50%,0)}
+
+/* 模态 */
+.hd-modal{
+  position:fixed;inset:0;background:rgba(6,6,12,.78);backdrop-filter:blur(5px);
+  display:none;place-items:center;z-index:300;padding:20px;
+}
+.hd-modal.hd-show{display:grid}
+.hd-modal-card{
+  background:var(--hd-card);border:1px solid var(--hd-line);border-radius:18px;
+  width:min(520px,94vw);padding:30px;position:relative;max-height:86vh;overflow:auto;
+}
+.hd-modal-card h3{font-size:19px;margin-bottom:14px}
+.hd-modal-card p{font-size:13.5px;color:#b8b8ce;line-height:1.9}
+.hd-modal-close{position:absolute;right:14px;top:12px;font-size:20px;color:var(--hd-mut)}
+.hd-modal-close:hover{color:var(--hd-neon)}
+.hd-modal-actions{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.hd-share-list{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.hd-share-list button{background:#2a2a3e;border:1px solid var(--hd-line);border-radius:20px;padding:7px 18px;font-size:13px;color:#d3d3e6}
+.hd-share-list button:hover{border-color:var(--hd-lime);color:var(--hd-lime)}
+
+/* 响应式 */
+@media(max-width:1024px){
+  .hd-hero-grid,.hd-focus-grid,.hd-deep,.hd-idea,.hd-contact{grid-template-columns:1fr}
+  .hd-vgrid,.hd-topic-grid,.hd-creators,.hd-essay-grid,.hd-comm-grid,.hd-rank-wrap{grid-template-columns:repeat(2,1fr)}
+  .hd-footer-grid{grid-template-columns:1fr 1fr}
+  .hd-deep-visual{position:static}
+  .hd-deep-visual img{aspect-ratio:16/10}
+}
+@media(max-width:760px){
+  :root{--hd-head:112px}
+  .hd-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    background:#181822;border-bottom:1px solid var(--hd-line);
+    flex-direction:column;padding:10px 16px;gap:2px;
+  }
+  .hd-nav.hd-open{display:flex}
+  .hd-nav a{padding:10px 12px}
+  .hd-burger{display:grid}
+  .hd-nav-row{position:relative;gap:12px}
+  .hd-search input{width:120px}
+  .hd-search input:focus{width:150px}
+  .hd-logo small{display:none}
+  .hd-vgrid,.hd-topic-grid,.hd-creators,.hd-essay-grid,.hd-comm-grid,.hd-rank-wrap,.hd-faq,.hd-idea-cards{grid-template-columns:1fr}
+  .hd-footer-grid{grid-template-columns:1fr}
+  .hd-hero{padding:40px 0 54px}
+  .hd-section{padding:52px 0}
+  .hd-notice-link{display:none}
+  .hd-hero-float{right:0}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="hd-sticky">
+  <div class="hd-notice">
+    <div class="hd-wrap">
+      <span class="hd-notice-badge">官方发布</span>
+      <div class="hd-notice-track">
+        <ul>
+          <li>「热舞原创企划·燃点2026」第二季投稿通道开启，本期新增双人编舞赛道</li>
+          <li>创作者激励计划 11 月结算完成，共 236 位舞者获得精品内容扶持金</li>
+          <li>舞力社区官方创作课上线：镜头语言与舞台调度 6 讲完整攻略已发布</li>
+          <li>「城市舞步」专题新增 8 座城市，报名与上传入口持续开放中</li>
+        </ul>
+      </div>
+      <a href="#hd-dynamics" class="hd-notice-link">查看更新</a>
+    </div>
+  </div>
+
+  <header class="hd-header">
+    <div class="hd-wrap hd-nav-row">
+      <a href="#hd-hero" class="hd-logo">
+        <span class="hd-logo-mark">▶</span>
+        <span>舞力社区<small>DANCE POWER</small></span>
+      </a>
+      <nav class="hd-nav" id="hdNav">
+        <a href="#hd-hero" class="hd-nav-on">首页</a>
+        <a href="#hd-focus">焦点视频</a>
+        <a href="#hd-hot">热门内容</a>
+        <a href="#hd-topics">专题企划</a>
+        <a href="#hd-creators">创作者</a>
+        <a href="#hd-deep">品牌解析</a>
+        <a href="#hd-dynamics">企业动态</a>
+        <a href="#hd-contact">联系我们</a>
+      </nav>
+      <div class="hd-head-tools">
+        <div class="hd-search">
+          <input type="text" id="hdSearchInput" placeholder="搜索舞种 / 创作者" aria-label="站内搜索">
+          <button id="hdSearchBtn" aria-label="提交搜索">🔍</button>
+          <div class="hd-search-tip" id="hdSearchTip"></div>
+        </div>
+        <button class="hd-burger" id="hdBurger" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hd-hero" id="hd-hero">
+    <div class="hd-wrap hd-hero-grid">
+      <div>
+        <span class="hd-hero-tag">官方网站 · 原创正版 · 持续运营</span>
+        <h1 class="hd-h1">性感美女热舞</h1>
+        <p class="hd-hero-sub">舞力社区 DANCE POWER · 原创舞蹈影像品牌</p>
+        <p class="hd-hero-intro">
+          舞力社区是深耕热舞影像垂直领域的原创内容品牌，官方网站为创作者与舞者提供作品发布、企划参与和成长陪伴的一站式平台。我们坚持以专业制作还原舞蹈的力量与真实，用镜头记录每一位舞者在练习室、舞台与城市街头的闪光时刻，构建多元、包容、值得信赖的舞蹈内容生态。
+        </p>
+        <div class="hd-hero-actions">
+          <a href="#hd-focus" class="hd-btn hd-btn-main">进入焦点视频 ▶</a>
+          <a href="#hd-creators" class="hd-btn hd-btn-ghost">认识创作者</a>
+          <button class="hd-btn hd-btn-ghost" data-hd-modal="submit">投稿入口</button>
+        </div>
+        <div class="hd-kpis">
+          <div class="hd-kpi"><b>1280<span>+</span></b><em>原创舞蹈作品</em></div>
+          <div class="hd-kpi"><b>96<span>万</span></b><em>社区舞者关注</em></div>
+          <div class="hd-kpi"><b>7<span>年</span></b><em>品牌持续运营</em></div>
+        </div>
+      </div>
+      <div class="hd-hero-visual">
+        <div class="hd-hero-cover">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 880 605'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23251a3a'/%3E%3Cstop offset='.55' stop-color='%23421b46'/%3E%3Cstop offset='1' stop-color='%23101020'/%3E%3C/linearGradient%3E%3CradialGradient id='g2' cx='.72' cy='.28' r='.5'%3E%3Cstop offset='0' stop-color='%23ff3d7f' stop-opacity='.85'/%3E%3Cstop offset='1' stop-color='%23ff3d7f' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='g3' cx='.24' cy='.82' r='.5'%3E%3Cstop offset='0' stop-color='%238a5cff' stop-opacity='.75'/%3E%3Cstop offset='1' stop-color='%238a5cff' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='880' height='605' fill='url(%23g1)'/%3E%3Crect width='880' height='605' fill='url(%23g2)'/%3E%3Crect width='880' height='605' fill='url(%23g3)'/%3E%3Cg opacity='.9'%3E%3Ccircle cx='440' cy='250' r='72' fill='none' stroke='%23ff8fb6' stroke-width='3' opacity='.7'/%3E%3Cpath d='M424 210l58 40-58 40z' fill='%23ff3d7f'/%3E%3C/g%3E%3Cg stroke='%23b6ff3d' stroke-width='2' opacity='.55' fill='none'%3E%3Cpath d='M120 470c60-90 140-90 200 0'/%3E%3Cpath d='M560 470c60-110 150-110 210 0'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.16'%3E%3Ccircle cx='150' cy='140' r='4'/%3E%3Ccircle cx='720' cy='110' r='6'/%3E%3Ccircle cx='780' cy='330' r='3'/%3E%3Ccircle cx='90' cy='350' r='5'/%3E%3Ccircle cx='640' cy='520' r='4'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.9'%3E%3Crect x='60' y='520' width='150' height='8' rx='4' opacity='.35'/%3E%3Crect x='60' y='540' width='90' height='8' rx='4' opacity='.2'/%3E%3C/g%3E%3Ctext x='640' y='560' font-size='26' fill='%23ffd0e0' font-family='sans-serif' opacity='.8'%3EHOT DANCE%3C/text%3E%3C/svg%3E" alt="热舞原创企划主视觉封面：紫色舞台光下的舞者剪影与播放标识">
+          <span class="hd-hero-badge">首屏主视觉 · 燃点2026</span>
+        </div>
+        <div class="hd-hero-float">
+          <i>◉</i>
+          <div><b>今晚 20:00 直播</b><em>创作者联合编舞现场</em></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="hd-section" id="hd-focus">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">FOCUS VIDEO</div>
+          <h2 class="hd-h2">本期<em>焦点视频</em>推荐</h2>
+          <p class="hd-sec-desc">由官方编辑部与创作者共同甄选的精品内容，覆盖编舞、舞台、教程与幕后四类方向，呈现性感美女热舞的多元表达。</p>
+        </div>
+        <a href="#hd-hot" class="hd-sec-more">浏览全部内容 →</a>
+      </div>
+
+      <div class="hd-focus-grid">
+        <article class="hd-vcard">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231c1030'/%3E%3Cstop offset='1' stop-color='%235e1746'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23f1)'/%3E%3Cg opacity='.85'%3E%3Cellipse cx='400' cy='430' rx='300' ry='60' fill='%23ff3d7f' opacity='.3'/%3E%3C/g%3E%3Cg fill='%23ff8fb6'%3E%3Cpath d='M400 130c22 0 40 18 40 40 0 30-40 70-40 70s-40-40-40-70c0-22 18-40 40-40z' opacity='.85'/%3E%3C/g%3E%3Cg stroke='%23b6ff3d' fill='none' stroke-width='3' opacity='.75'%3E%3Cpath d='M180 300c50-70 120-70 170 0'/%3E%3Cpath d='M450 300c50-90 130-90 180 0'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Ccircle cx='130' cy='90' r='3' opacity='.4'/%3E%3Ccircle cx='680' cy='120' r='4' opacity='.5'/%3E%3Ccircle cx='700' cy='390' r='3' opacity='.35'/%3E%3C/g%3E%3Ctext x='60' y='80' fill='%23ffffff' opacity='.85' font-size='22' font-family='sans-serif'%3E%E7%87%83%E7%82%B9%C2%B72026%3C/text%3E%3C/svg%3E" alt="焦点封面：燃点2026舞者剪影与粉色舞台光">
+            <span class="hd-vtag">焦点 · 编舞</span>
+            <span class="hd-vdur">12:40</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">燃点2026｜《绯色节拍》完整编舞首发，七人队列的层次调度拆解</h3>
+            <p class="hd-vdesc">从练习室磨合到舞台实拍，完整记录七人队列如何在紧凑节拍中完成层次调度与眼神配合，附逐段动作要点标记，适合进阶舞者对照练习。</p>
+            <div class="hd-vmeta">
+              <span class="hd-avatar" style="background:#ff8fb6">舞</span>
+              <span>舞者·沈绯</span><span>· 官方精品内容</span><span>· 11-17</span>
+            </div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">3.2万</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+              <button class="hd-act" data-hd-modal="comment">💬 428</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="hd-focus-side">
+          <article class="hd-mini">
+            <div class="hd-vcover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%231d2a3f'/%3E%3Cpath d='M0 160l90-90 70 70 60-50 100 70v40H0z' fill='%232f4d7a'/%3E%3Ccircle cx='250' cy='60' r='26' fill='%238a5cff' opacity='.8'/%3E%3Cg stroke='%23b6ff3d' stroke-width='2' fill='none' opacity='.7'%3E%3Ccircle cx='80' cy='120' r='22'/%3E%3C/g%3E%3C/svg%3E" alt="城市舞步专题迷你封面：冷蓝调城市天际线轮廓">
+              <span class="hd-vtag">城市舞步</span>
+            </div>
+            <div class="hd-mini-body">
+              <h4>城市舞步·上海站：外滩夜风里的即兴热舞</h4>
+              <p>不设舞台，用街灯与江风做背景，一次关于身体与城市的对话。</p>
+            </div>
+          </article>
+          <article class="hd-mini">
+            <div class="hd-vcover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23331b2a'/%3E%3Cg fill='%23ff3d7f'%3E%3Crect x='40' y='90' width='16' height='70' rx='8' opacity='.9'/%3E%3Crect x='70' y='60' width='16' height='100' rx='8' opacity='.7'/%3E%3Crect x='100' y='100' width='16' height='60' rx='8' opacity='.9'/%3E%3Crect x='130' y='40' width='16' height='120' rx='8' opacity='.6'/%3E%3C/g%3E%3Cg fill='%23b6ff3d' opacity='.8'%3E%3Ccircle cx='240' cy='80' r='30'/%3E%3C/g%3E%3C/svg%3E" alt="教程迷你封面：粉色节拍波形与荧光圆点">
+              <span class="hd-vtag">教程</span>
+            </div>
+            <div class="hd-mini-body">
+              <h4>节拍感速成：4/4 拍热舞动作卡点的三套练习法</h4>
+              <p>从数拍到呼吸，把动作踩进鼓点里，新手也能快速上手。</p>
+            </div>
+          </article>
+          <article class="hd-mini">
+            <div class="hd-vcover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%2324182f'/%3E%3Cg stroke='%23ff8fb6' stroke-width='4' fill='none' opacity='.8'%3E%3Cpath d='M40 150c30-60 70-60 100 0s70 60 100 0'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Ccircle cx='270' cy='50' r='16'/%3E%3Ccircle cx='60' cy='56' r='8'/%3E%3C/g%3E%3C/svg%3E" alt="幕后迷你封面：柔粉色曲线与白色光点构成的抽象画面">
+              <span class="hd-vtag">幕后</span>
+            </div>
+            <div class="hd-mini-body">
+              <h4>一支热舞影像的诞生：灯光、机位与剪辑的 6 小时</h4>
+              <p>拍摄现场全记录，告诉你镜头情绪是怎么被一点点搭出来的。</p>
+            </div>
+          </article>
+          <article class="hd-mini">
+            <div class="hd-vcover">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23150f22'/%3E%3Cg fill='%238a5cff' opacity='.85'%3E%3Cpath d='M160 40l18 40 44 6-32 30 8 44-38-22-38 22 8-44-32-30 44-6z'/%3E%3C/g%3E%3Cg fill='%23b6ff3d' opacity='.8'%3E%3Crect x='40' y='160' width='240' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="访谈迷你封面：紫色星芒图形与荧光横线">
+              <span class="hd-vtag">访谈</span>
+            </div>
+            <div class="hd-mini-body">
+              <h4>舞者访谈：她说性感不是标签，是自信的表达方式</h4>
+              <p>关于身体、目光与自我认同，一次坦白而温暖的对话。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="hd-section hd-alt" id="hd-hot">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">TRENDING NOW</div>
+          <h2 class="hd-h2">社区<em>热门视频流</em></h2>
+          <p class="hd-sec-desc">按标签筛选你感兴趣的方向，所有内容均由社区创作者原创上传，官方审核后发布，正版高清呈现。</p>
+        </div>
+      </div>
+
+      <div class="hd-filter" id="hdFilter">
+        <button class="hd-chip hd-chip-on" data-hd-filter="all">全部</button>
+        <button class="hd-chip" data-hd-filter="编舞">编舞</button>
+        <button class="hd-chip" data-hd-filter="教程">教程</button>
+        <button class="hd-chip" data-hd-filter="城市">城市</button>
+        <button class="hd-chip" data-hd-filter="幕后">幕后</button>
+        <button class="hd-chip" data-hd-filter="访谈">访谈</button>
+      </div>
+
+      <div class="hd-vgrid" id="hdVGrid">
+        <article class="hd-vcard" data-hd-cat="编舞">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%232b1030'/%3E%3Cg fill='%23ff3d7f' opacity='.85'%3E%3Ccircle cx='240' cy='135' r='58' fill='none' stroke='%23ff8fb6' stroke-width='4'/%3E%3Cpath d='M228 108l42 27-42 27z'/%3E%3C/g%3E%3Cg stroke='%23b6ff3d' stroke-width='3' fill='none' opacity='.6'%3E%3Cpath d='M30 220q60-90 120 0t120 0'/%3E%3C/g%3E%3C/svg%3E" alt="封面：粉色环形舞台光与热舞播放标识">
+            <span class="hd-vtag">编舞</span><span class="hd-vdur">08:12</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">《夜行信徒》双人镜像编舞，节拍错位的默契练习</h3>
+            <p class="hd-vdesc">两名舞者以镜像与错位反复互换位置，考验的是呼吸同步而不是记动作。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#b6ff3d">林</span><span>林允夏</span><span>· 11-16</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">1.8万</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hd-vcard" data-hd-cat="教程">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23152924'/%3E%3Cg stroke='%23b6ff3d' stroke-width='5' fill='none' opacity='.85'%3E%3Cpath d='M60 200c40-100 100-100 140 0'/%3E%3Cpath d='M240 200c40-120 120-120 160 0'/%3E%3C/g%3E%3Cg fill='%23ff3d7f'%3E%3Ccircle cx='400' cy='70' r='20'/%3E%3C/g%3E%3C/svg%3E" alt="封面：绿色荧光曲线与粉色圆点的教程画面">
+            <span class="hd-vtag">教程</span><span class="hd-vdur">15:30</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">零基础也能跟上｜热舞入门十二个基础发力点</h3>
+            <p class="hd-vdesc">从核心收紧到肩膀放松，把看起来难的动作拆成能练的小步骤。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#8a5cff">陈</span><span>陈一舞</span><span>· 11-15</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">2.6万</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hd-vcard" data-hd-cat="城市">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23152733'/%3E%3Cg fill='%23284a63'%3E%3Crect x='20' y='150' width='60' height='120'/%3E%3Crect x='92' y='110' width='50' height='160'/%3E%3Crect x='154' y='170' width='46' height='100'/%3E%3Crect x='330' y='130' width='58' height='140'/%3E%3Crect x='400' y='160' width='60' height='110'/%3E%3C/g%3E%3Cg fill='%23ffcb3d' opacity='.8'%3E%3Crect x='30' y='165' width='10' height='10'/%3E%3Crect x='50' y='185' width='10' height='10'/%3E%3Crect x='342' y='150' width='10' height='10'/%3E%3Crect x='414' y='180' width='10' height='10'/%3E%3C/g%3E%3Cg fill='%23ff3d7f' opacity='.9'%3E%3Ccircle cx='240' cy='95' r='26'/%3E%3C/g%3E%3C/svg%3E" alt="封面：夜色城市楼群剪影与粉色光点">
+            <span class="hd-vtag">城市</span><span class="hd-vdur">10:05</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">城市舞步·成都站：老巷尽头的一段即兴热舞</h3>
+            <p class="hd-vdesc">没有舞美，只有斑驳墙面和路过的风，身体自己找到了节奏。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#ffcb3d">苏</span><span>苏野</span><span>· 11-14</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">9820</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hd-vcard" data-hd-cat="幕后">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23201a2e'/%3E%3Cg stroke='%238a5cff' stroke-width='4' fill='none' opacity='.8'%3E%3Crect x='70' y='60' width='150' height='100' rx='10'/%3E%3Cpath d='M110 60v100M180 60v100'/%3E%3C/g%3E%3Cg fill='%23ff8fb6'%3E%3Crect x='300' y='90' width='90' height='14' rx='7'/%3E%3Crect x='300' y='120' width='60' height='14' rx='7'/%3E%3Crect x='300' y='150' width='110' height='14' rx='7'/%3E%3C/g%3E%3C/svg%3E" alt="封面：紫色取景框与粉色时间线条的幕后画面">
+            <span class="hd-vtag">幕后</span><span class="hd-vdur">06:48</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">拍摄幕后：一段热舞影像如何用三支灯打出情绪</h3>
+            <p class="hd-vdesc">主光、轮廓光与侧逆光的组合逻辑，看懂之后你也能拍自己。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#8a5cff">阿</span><span>阿衡</span><span>· 11-13</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">7420</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hd-vcard" data-hd-cat="访谈">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23241425'/%3E%3Cg fill='none' stroke='%23ff3d7f' stroke-width='3' opacity='.8'%3E%3Cpath d='M120 90h180a20 20 0 0120 20v60a20 20 0 01-20 20H190l-40 34v-34h-30a20 20 0 01-20-20v-60a20 20 0 0120-20z'/%3E%3C/g%3E%3Cg fill='%23b6ff3d' opacity='.85'%3E%3Ccircle cx='170' cy='140' r='7'/%3E%3Ccircle cx='210' cy='140' r='7'/%3E%3Ccircle cx='250' cy='140' r='7'/%3E%3C/g%3E%3C/svg%3E" alt="封面：粉色对话气泡与荧光点的访谈画面">
+            <span class="hd-vtag">访谈</span><span class="hd-vdur">22:16</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">对话周青：从练习室地板到品牌主视觉的十年</h3>
+            <p class="hd-vdesc">她说最大的变化不是动作变难，而是终于知道为谁而舞。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#ff8fb6">周</span><span>周青</span><span>· 11-12</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">1.1万</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="hd-vcard" data-hd-cat="编舞">
+          <div class="hd-vcover">
+            <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%231a1020'/%3E%3Cg stroke='%23ff3d7f' stroke-width='4' fill='none'%3E%3Cpath d='M60 210c80 0 80-140 160-140s80 140 160 140'/%3E%3C/g%3E%3Cg fill='%23b6ff3d'%3E%3Ccircle cx='380' cy='70' r='16'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.6'%3E%3Ccircle cx='100' cy='70' r='6'/%3E%3Ccircle cx='240' cy='210' r='5'/%3E%3C/g%3E%3C/svg%3E" alt="封面：粉色波浪曲线与荧光圆点构成的编排画面">
+            <span class="hd-vtag">编舞</span><span class="hd-vdur">09:24</span>
+            <div class="hd-vplay"><span>▶</span></div>
+          </div>
+          <div class="hd-vbody">
+            <h3 class="hd-h3">六人队形实验：用几何走位重构一段热舞</h3>
+            <p class="hd-vdesc">三角、对角、圆形，三种队形在同一个八拍里完成切换。</p>
+            <div class="hd-vmeta"><span class="hd-avatar" style="background:#b6ff3d">贺</span><span>贺兰</span><span>· 11-11</span></div>
+            <div class="hd-vfoot">
+              <button class="hd-act" data-hd-like><span class="hd-act-ico">♡</span><span class="hd-act-num">8600</span></button>
+              <button class="hd-act" data-hd-fav><span class="hd-act-ico">☆</span><span>收藏</span></button>
+              <button class="hd-act" data-hd-share>↗ 分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="hd-section" id="hd-topics">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">SPECIAL PROJECT</div>
+          <h2 class="hd-h2">专题<em>企划</em>进行中</h2>
+          <p class="hd-sec-desc">官方发布的长线企划，围绕热舞的不同切面持续更新，欢迎舞者报名参与、上传作品与投票选出下一期主题。</p>
+        </div>
+      </div>
+      <div class="hd-topic-grid">
+        <article class="hd-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23230f2c'/%3E%3Cg fill='%23ff3d7f' opacity='.85'%3E%3Cpath d='M150 90l14 32 34 4-25 24 6 34-29-17-29 17 6-34-25-24 34-4z'/%3E%3C/g%3E%3Cg stroke='%23b6ff3d' fill='none' stroke-width='3' opacity='.7'%3E%3Ccircle cx='150' cy='310' r='52'/%3E%3Cpath d='M120 310l20 22 40-44'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：燃点2026星形标识与绿色对勾圆环">
+          <div class="hd-topic-mask"></div>
+          <div class="hd-topic-body">
+            <h3>燃点2026 原创热舞企划</h3>
+            <p>四季四期，记录同一群舞者一年里的变化与突破。</p>
+            <span class="hd-topic-state">更新至第二季 · 12 支</span>
+          </div>
+        </article>
+        <article class="hd-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%2313222b'/%3E%3Cg fill='%232a5a72'%3E%3Crect x='20' y='260' width='60' height='140'/%3E%3Crect x='90' y='200' width='50' height='200'/%3E%3Crect x='160' y='240' width='54' height='160'/%3E%3Crect x='224' y='180' width='60' height='220'/%3E%3C/g%3E%3Cg fill='%23ffcb3d' opacity='.9'%3E%3Ccircle cx='150' cy='110' r='34'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：夜色城市楼群与黄色圆月">
+          <div class="hd-topic-mask"></div>
+          <div class="hd-topic-body">
+            <h3>城市舞步 · 在地影像计划</h3>
+            <p>在街角、天台与地铁口，用身体重新丈量一座城市。</p>
+            <span class="hd-topic-state">8 座城市 · 持续征集中</span>
+          </div>
+        </article>
+        <article class="hd-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%23251a3a'/%3E%3Cg stroke='%238a5cff' stroke-width='5' fill='none' opacity='.85'%3E%3Cpath d='M40 330c40-140 90-140 130 0'/%3E%3Cpath d='M160 330c40-180 110-180 150 0'/%3E%3C/g%3E%3Cg fill='%23ff8fb6'%3E%3Ccircle cx='240' cy='90' r='18'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：紫色弧线与粉色圆点的教程企划画面">
+          <div class="hd-topic-mask"></div>
+          <div class="hd-topic-body">
+            <h3>舞者课堂 · 系统教程合集</h3>
+            <p>从发力到镜头感，六位创作者联合出品的学习路径。</p>
+            <span class="hd-topic-state">已上线 24 讲</span>
+          </div>
+        </article>
+        <article class="hd-topic">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 400'%3E%3Crect width='300' height='400' fill='%232b1d17'/%3E%3Cg fill='%23ff8f4d' opacity='.85'%3E%3Crect x='46' y='180' width='208' height='130' rx='16'/%3E%3C/g%3E%3Cg fill='%23ffd8a8'%3E%3Ccircle cx='150' cy='245' r='30'/%3E%3C/g%3E%3Cg stroke='%23b6ff3d' stroke-width='4' fill='none' opacity='.75'%3E%3Cpath d='M70 130h160'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：暖橙舞台灯箱与白色圆形的幕后企划画面">
+          <div class="hd-topic-mask"></div>
+          <div class="hd-topic-body">
+            <h3>幕后十二时辰 · 制作揭秘</h3>
+            <p>灯光、机位、剪辑与服装，把所有看不见的部分讲清楚。</p>
+            <span class="hd-topic-state">每月更新 · 6 期</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="hd-section hd-alt" id="hd-creators">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">CREATORS</div>
+          <h2 class="hd-h2">社区<em>创作者矩阵</em></h2>
+          <p class="hd-sec-desc">他们是舞力社区的长期创作者，背景不同、风格各异，共同构成性感美女热舞多元、包容的表达光谱。点击卡片可查看创作者档案。</p>
+        </div>
+      </div>
+      <div class="hd-creators">
+        <article class="hd-creator" data-hd-creator="沈绯">
+          <div class="hd-creator-ava" style="background:linear-gradient(135deg,#ff8fb6,#ff3d7f)">沈</div>
+          <h3>沈绯</h3>
+          <span>编舞 / 舞台表现</span>
+          <p>七年编舞经验，擅长把情绪写进队形，作品讲究层次与呼吸感。</p>
+          <div class="hd-creator-stat"><div><b>96</b>作品</div><div><b>24.1万</b>关注</div></div>
+        </article>
+        <article class="hd-creator" data-hd-creator="陈一舞">
+          <div class="hd-creator-ava" style="background:linear-gradient(135deg,#b6ff3d,#8fdc00)">陈</div>
+          <h3>陈一舞</h3>
+          <span>教学 / 基础训练</span>
+          <p>专注零基础教学，把复杂动作拆成可执行的步骤，口碑稳定。</p>
+          <div class="hd-creator-stat"><div><b>142</b>作品</div><div><b>31.6万</b>关注</div></div>
+        </article>
+        <article class="hd-creator" data-hd-creator="苏野">
+          <div class="hd-creator-ava" style="background:linear-gradient(135deg,#ffcb3d,#ff8f4d)">苏</div>
+          <h3>苏野</h3>
+          <span>城市即兴 / 在地记录</span>
+          <p>常年在城市里边走边跳，把街头的声音当作自己的伴奏。</p>
+          <div class="hd-creator-stat"><div><b>78</b>作品</div><div><b>17.8万</b>关注</div></div>
+        </article>
+        <article class="hd-creator" data-hd-creator="阿衡">
+          <div class="hd-creator-ava" style="background:linear-gradient(135deg,#8a5cff,#b39dff)">阿</div>
+          <h3>阿衡</h3>
+          <span>影像 / 拍摄后期</span>
+          <p>曾是广告摄影师，如今专注舞蹈影像，擅长用光影讲故事。</p>
+          <div class="hd-creator-stat"><div><b>64</b>作品</div><div><b>12.3万</b>关注</div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据榜单 + 随笔 -->
+  <section class="hd-section" id="hd-rank">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">RANKING</div>
+          <h2 class="hd-h2">本期<em>数据榜单</em></h2>
+          <p class="hd-sec-desc">热度、口碑与新人三榜同步更新，数据来自社区真实互动，反映当下内容生态的活跃度。</p>
+        </div>
+      </div>
+      <div class="hd-rank-wrap">
+        <div class="hd-rank">
+          <h3><i>◆</i>热度榜</h3>
+          <ol>
+            <li><span class="hd-rank-num">1</span><span class="hd-rank-name">《绯色节拍》七人编舞</span><span class="hd-rank-fire">3.2万</span></li>
+            <li><span class="hd-rank-num">2</span><span class="hd-rank-name">热舞入门十二个发力点</span><span class="hd-rank-fire">2.6万</span></li>
+            <li><span class="hd-rank-num">3</span><span class="hd-rank-name">《夜行信徒》双人镜像</span><span class="hd-rank-fire">1.8万</span></li>
+            <li><span class="hd-rank-num">4</span><span class="hd-rank-name">对话周青：十年舞者路</span><span class="hd-rank-fire">1.1万</span></li>
+            <li><span class="hd-rank-num">5</span><span class="hd-rank-name">城市舞步·成都站即兴</span><span class="hd-rank-fire">9820</span></li>
+          </ol>
+        </div>
+        <div class="hd-rank">
+          <h3><i>◆</i>口碑榜</h3>
+          <ol>
+            <li><span class="hd-rank-num">1</span><span class="hd-rank-name">舞者课堂 · 系统教程合集</span><span class="hd-rank-fire">9.8</span></li>
+            <li><span class="hd-rank-num">2</span><span class="hd-rank-name">幕后十二时辰 · 制作揭秘</span><span class="hd-rank-fire">9.7</span></li>
+            <li><span class="hd-rank-num">3</span><span class="hd-rank-name">燃点2026 第一季合辑</span><span class="hd-rank-fire">9.6</span></li>
+            <li><span class="hd-rank-num">4</span><span class="hd-rank-name">身体与目光 · 舞者访谈</span><span class="hd-rank-fire">9.5</span></li>
+            <li><span class="hd-rank-num">5</span><span class="hd-rank-name">六人队形实验记录</span><span class="hd-rank-fire">9.3</span></li>
+          </ol>
+        </div>
+        <div class="hd-rank">
+          <h3><i>◆</i>新人榜</h3>
+          <ol>
+            <li><span class="hd-rank-num">1</span><span class="hd-rank-name">小满 · 练习室日常</span><span class="hd-rank-fire">+1840</span></li>
+            <li><span class="hd-rank-num">2</span><span class="hd-rank-name">Miya · 节拍感训练</span><span class="hd-rank-fire">+1520</span></li>
+            <li><span class="hd-rank-num">3</span><span class="hd-rank-name">阿雾 · 天台一分钟</span><span class="hd-rank-fire">+1260</span></li>
+            <li><span class="hd-rank-num">4</span><span class="hd-rank-name">青禾 · 双人默契练习</span><span class="hd-rank-fire">+980</span></li>
+            <li><span class="hd-rank-num">5</span><span class="hd-rank-name">Nan · 慢速拆解教学</span><span class="hd-rank-fire">+760</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="hd-sec-head" style="margin-top:64px">
+        <div>
+          <div class="hd-sec-eyebrow">NOTES</div>
+          <h2 class="hd-h2">舞者<em>随笔</em>与故事</h2>
+        </div>
+      </div>
+      <div class="hd-essay-grid">
+        <article class="hd-essay">
+          <h3>第一次把动作跳成自己的样子</h3>
+          <p>刚学热舞时，我总在模仿镜子里别人的轮廓。直到某天练习室停电，只剩下手机外放的音乐，我才发现身体其实早就记住了节奏。那一刻我跳得并不标准，却第一次觉得好看。</p>
+          <footer><span>沈绯</span><span>11-16</span></footer>
+        </article>
+        <article class="hd-essay">
+          <h3>在街角跳舞，路人的目光也是舞台的一部分</h3>
+          <p>城市企划拍到第三站，我慢慢不再害怕被看。有人停下来，有人举手机，也有人只是路过。身体在公共空间里变得更诚实，这种真实感是练习室给不了的。</p>
+          <footer><span>苏野</span><span>11-13</span></footer>
+        </article>
+        <article class="hd-essay">
+          <h3>剪辑教会我重新看一遍自己的动作</h3>
+          <p>拍摄时觉得顺畅的动作，回放会发现肩膀是紧的。感谢剪辑，它让我用第三视角审视身体，也让我明白所谓专业，是把每个细节都愿意再看一次。</p>
+          <footer><span>阿衡</span><span>11-10</span></footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌深度解析 -->
+  <section class="hd-section hd-alt" id="hd-deep">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">BRAND STORY</div>
+          <h2 class="hd-h2">品牌故事与<em>深度解析</em></h2>
+          <p class="hd-sec-desc">了解舞力社区如何以热舞影像为切口，构建一个真实、温暖、有力量的舞蹈内容生态。</p>
+        </div>
+      </div>
+      <div class="hd-deep">
+        <div class="hd-deep-visual">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 600'%3E%3Cdefs%3E%3ClinearGradient id='d1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23260f30'/%3E%3Cstop offset='.55' stop-color='%233a1450'/%3E%3Cstop offset='1' stop-color='%23110c1c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='600' fill='url(%23d1)'/%3E%3Cg fill='none' stroke='%23ff3d7f' stroke-width='3' opacity='.75'%3E%3Ccircle cx='240' cy='230' r='110'/%3E%3Ccircle cx='240' cy='230' r='150' opacity='.4'/%3E%3C/g%3E%3Cg fill='%23b6ff3d' opacity='.9'%3E%3Cpath d='M240 170l16 40 42 4-32 28 10 42-36-22-36 22 10-42-32-28 42-4z'/%3E%3C/g%3E%3Cg stroke='%238a5cff' stroke-width='4' fill='none' opacity='.7'%3E%3Cpath d='M90 470c50-70 110-70 150 0s100 70 150 0'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.5'%3E%3Ccircle cx='90' cy='110' r='4'/%3E%3Ccircle cx='400' cy='140' r='6'/%3E%3Ccircle cx='120' cy='530' r='5'/%3E%3Ccircle cx='380' cy='520' r='3'/%3E%3C/g%3E%3C/svg%3E" alt="品牌故事配图：紫色环形光晕与荧光星形标识">
+        </div>
+        <div class="hd-deep-text">
+          <h3>从一支练习室视频开始</h3>
+          <p>2019 年，舞力社区以一支练习室里的热舞视频起步。没有灯光棚，没有精美布景，只有一部手机和一面旧镜子。视频发布后意外获得大量真实反馈，很多舞者留言说，终于有人拍出了他们练习时那种不完美却生机勃勃的状态。这让我们确信，性感美女热舞真正的魅力不在于包装，而在于身体本身的力量与自信。</p>
+          <h3>把“热舞”当作一种表达方式</h3>
+          <p>我们始终坚持一个判断：热舞不是被凝视的对象，而是表达自我、锻炼身体、建立连接的主动行为。因此官网的内容标准里，创作者需要说明编舞思路、拍摄意图与练习建议，观众看到的不仅是画面，也能理解动作背后的思考。这种双向的尊重，让社区的口碑逐年沉淀。</p>
+          <h3>垂直领域的深耕方式</h3>
+          <p>平台每年围绕四条内容线持续投入：原创编舞、系统教程、城市在地影像与幕后制作揭秘。我们与创作者共同制定选题，提供拍摄与剪辑支持，并把优秀作品纳入官方精品内容企划。过去一年，共有 236 位舞者获得创作扶持，累计产出 1280 余支原创作品，内容生态保持稳定增长。</p>
+          <h3>用户至上与内容治理</h3>
+          <p>舞力社区设有明确的内容审核与反馈机制，所有上传作品需经人工复核；对于肖像使用、音乐版权与场地安全，官网均有清晰说明。我们相信，只有创作者安心、观众放心，社区才能长期健康运营。这也是“值得信赖”四个字在品牌内部的具体含义。</p>
+          <h3>接下来要做什么</h3>
+          <p>未来一年，品牌将把重心放在新人培养与线下联动上：一方面完善分级教程体系，让零基础用户有清晰的成长路径；另一方面在更多城市举办小型线下交流会，把屏幕里的同好变成可以一起跳舞的朋友。我们希望热舞影像不止被看见，也能真正参与生活。</p>
+          <div class="hd-deep-tags">
+            <span>官方网站</span><span>原创正版</span><span>垂直领域</span><span>内容生态</span><span>创作者扶持</span><span>持续运营</span><span>匠心制作</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 灵感与工具 -->
+  <section class="hd-section" id="hd-idea">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">INSPIRATION</div>
+          <h2 class="hd-h2">创作<em>灵感</em>与实用攻略</h2>
+          <p class="hd-sec-desc">从选题到剪辑，官方整理的一套轻量工具包，帮助新创作者更快把想法变成作品。</p>
+        </div>
+      </div>
+      <div class="hd-idea">
+        <div class="hd-idea-cards">
+          <div class="hd-idea-card"><b>脚本灵感</b><p>试试“一个八拍讲一个情绪”的结构：起、压、放、收，四段各八拍，观众更容易跟上你的节奏。</p></div>
+          <div class="hd-idea-card"><b>标题建议</b><p>把动作难点写进标题，如“卡点难在哪”，比抽象形容更能吸引同类舞者点击。</p></div>
+          <div class="hd-idea-card"><b>剪辑思路</b><p>动作幅度大的段落保留长镜头，转身处可用 0.5 秒叠化，避免节奏被切碎。</p></div>
+          <div class="hd-idea-card"><b>拍摄攻略</b><p>侧逆光勾勒轮廓，正面补柔光减少阴影；手机拍摄建议锁定曝光，保持画面对比稳定。</p></div>
+        </div>
+        <div class="hd-contact-box">
+          <h3>参与官方挑战</h3>
+          <p>每期主题挑战由官方发起，舞者上传作品即可参与，优秀作品会进入首页焦点位，并获得精品内容扶持。</p>
+          <ul class="hd-contact-list">
+            <li><i>›</i>本期主题：八拍之内，说出你的态度</li>
+            <li><i>›</i>参与方式：官网投稿入口上传，标注挑战标签</li>
+            <li><i>›</i>评选维度：编舞完成度、镜头表达、社区互动</li>
+            <li><i>›</i>结果公布：每月 28 日官方动态公示</li>
+          </ul>
+          <div class="hd-modal-actions">
+            <button class="hd-btn hd-btn-main" data-hd-modal="submit">我要报名</button>
+            <button class="hd-btn hd-btn-ghost" data-hd-share>分享挑战</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="hd-section hd-alt" id="hd-dynamics">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">NEWSROOM</div>
+          <h2 class="hd-h2">企业<em>动态</em>与官方发布</h2>
+          <p class="hd-sec-desc">品牌资讯、内容更新与社区公告，均在此同步发布，方便创作者与合作伙伴掌握最新进展。</p>
+        </div>
+      </div>
+      <div class="hd-timeline">
+        <div class="hd-tl-item">
+          <time>2026-11-17</time>
+          <h3>「燃点2026」第二季上线，新增双人编舞赛道</h3>
+          <p>本季共收到 312 份投稿，最终 12 支作品进入官方精品内容序列，双人赛道首次引入默契度评分维度。</p>
+        </div>
+        <div class="hd-tl-item">
+          <time>2026-11-12</time>
+          <h3>创作者激励计划 11 月结算完成</h3>
+          <p>本期共 236 位舞者获得扶持金，其中新人创作者占比 34%，较上期提升明显，内容生态结构更趋健康。</p>
+        </div>
+        <div class="hd-tl-item">
+          <time>2026-11-06</time>
+          <h3>官方创作课《镜头语言与舞台调度》上线</h3>
+          <p>六讲内容由品牌影像团队与三位创作者联合录制，涵盖机位选择、灯光布置与动作调度，面向全体注册用户开放。</p>
+        </div>
+        <div class="hd-tl-item">
+          <time>2026-10-29</time>
+          <h3>城市舞步计划新增四座城市</h3>
+          <p>新增城市包括长沙、青岛、昆明与福州，在地创作者可申请拍摄支持，报名与上传入口长期开放。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="hd-section" id="hd-community">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">VOICES</div>
+          <h2 class="hd-h2">社区<em>用户评价</em></h2>
+          <p class="hd-sec-desc">来自舞者、观众与合作伙伴的真实反馈，是我们持续更新的动力。</p>
+        </div>
+      </div>
+      <div class="hd-comm-grid">
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#ff8fb6">小</span><div><b>小满</b><em>练习两年 · 上海</em></div></div>
+          <p>跟了官网的入门系列三个月，终于敢录自己的视频了。教程真的会把发力拆开讲，这点很打动人。</p>
+          <div class="hd-stars">★★★★★</div>
+        </div>
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#b6ff3d">M</span><div><b>Miya</b><em>新人创作者</em></div></div>
+          <p>投稿审核反馈写得很细，不是简单一句不通过。第一次收到修改建议的时候有点感动。</p>
+          <div class="hd-stars">★★★★★</div>
+        </div>
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#8a5cff">K</span><div><b>Kiven</b><em>摄影爱好者</em></div></div>
+          <p>幕后系列对我帮助很大，灯光那期看完直接去改了工作室的布光，成本不高效果明显。</p>
+          <div class="hd-stars">★★★★☆</div>
+        </div>
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#ffcb3d">阿</span><div><b>阿雾</b><em>天台系列作者</em></div></div>
+          <p>城市企划让我第一次认真看自己住的地方。以前觉得普通的天台，在镜头里居然挺好看。</p>
+          <div class="hd-stars">★★★★★</div>
+        </div>
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#ff3d7f">豆</span><div><b>豆子</b><em>观众 · 广州</em></div></div>
+          <p>不夸张地说，这里的热舞内容看起来最舒服，没有过度包装，能感觉到舞者是真的在享受跳舞。</p>
+          <div class="hd-stars">★★★★★</div>
+        </div>
+        <div class="hd-comm">
+          <div class="hd-comm-head"><span class="hd-avatar" style="background:#ff8f4d">青</span><div><b>青禾</b><em>双人舞合作者</em></div></div>
+          <p>在社区找到了长期搭档，两个人从线上聊到线下排练，这种连接挺难得的。</p>
+          <div class="hd-stars">★★★★☆</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 联系 -->
+  <section class="hd-section hd-alt" id="hd-contact">
+    <div class="hd-wrap">
+      <div class="hd-sec-head">
+        <div>
+          <div class="hd-sec-eyebrow">SUPPORT</div>
+          <h2 class="hd-h2">常见问题与<em>联系我们</em></h2>
+          <p class="hd-sec-desc">关于投稿、版权与合作的常见疑问，这里给出官方答复；如需进一步沟通，可通过下列方式联系品牌团队。</p>
+        </div>
+      </div>
+
+      <div class="hd-faq" style="margin-bottom:44px">
+        <details>
+          <summary>如何向官网投稿自己的热舞作品？</summary>
+          <p>点击页面任意“投稿入口”按钮，填写作品标题、舞种、创作说明与视频文件即可。官方会在 3 个工作日内完成初审，通过后进入内容排期。</p>
+        </details>
+        <details>
+          <summary>上传的作品需要原创吗？音乐版权怎么处理？</summary>
+          <p>视频画面需为本人或团队原创拍摄。若使用第三方音乐，请在投稿时注明来源，官方会协助判断是否可发布，避免版权风险。</p>
+        </details>
+        <details>
+          <summary>平台对内容有哪些基本要求？</summary>
+          <p>作品需为健康的舞蹈展示，尊重舞者本人意愿，不得包含侵权、危险动作引导或违规信息。所有内容经人工复核后发布。</p>
+        </details>
+        <details>
+          <summary>创作者扶持计划怎么申请？</summary>
+          <p>主页达到 3 支通过审核的作品后，可在创作者中心提交申请。评审综合内容质量、更新频率与社区互动，每季度公布一次结果。</p>
+        </details>
+        <details>
+          <summary>线下活动和比赛如何报名？</summary>
+          <p>官方活动会提前在企业动态与公告条发布，报名入口同步开放。名额有限，建议关注公告或订阅品牌邮件通知。</p>
+        </details>
+        <details>
+          <summary>品牌合作与商业拍摄如何沟通？</summary>
+          <p>可发送合作意向至官方邮箱，注明合作类型、时间与预算范围。品牌团队会在 5 个工作日内回复并安排进一步沟通。</p>
+        </details>
+      </div>
+
+      <div class="hd-contact">
+        <div class="hd-contact-box">
+          <h3>联系舞力社区</h3>
+          <p>官方网站为品牌唯一官方信息发布渠道，投稿、合作与反馈均通过以下方式受理。</p>
+          <ul class="hd-contact-list">
+            <li><i>✉</i>合作邮箱：brand@dancepower.example</li>
+            <li><i>✎</i>投稿通道：官网右上角“投稿入口”</li>
+            <li><i>☎</i>工作日 10:00–18:00 在线客服</li>
+            <li><i>◎</i>内容反馈：任意作品页点击“反馈”</li>
+          </ul>
+          <div class="hd-modal-actions">
+            <button class="hd-btn hd-btn-main" data-hd-modal="submit">立即投稿</button>
+            <button class="hd-btn hd-btn-ghost" data-hd-share>分享官网</button>
+          </div>
+        </div>
+        <div class="hd-contact-box">
+          <h3>合作品牌与伙伴</h3>
+          <p>感谢长期支持原创舞蹈影像的伙伴，多元合作让内容生态更有活力。</p>
+          <div class="hd-partners">
+            <span>城市文化中心</span>
+            <span>青年舞蹈联盟</span>
+            <span>光影器材工作室</span>
+            <span>独立音乐厂牌</span>
+            <span>高校街舞社</span>
+            <span>影像艺术空间</span>
+          </div>
+          <p style="margin-top:20px">若希望加入合作计划，请通过合作邮箱提交品牌简介与合作设想，我们欢迎多元、包容的长期合作。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="hd-footer">
+  <div class="hd-wrap">
+    <div class="hd-footer-grid">
+      <div>
+        <a href="#hd-hero" class="hd-logo" style="margin-bottom:14px">
+          <span class="hd-logo-mark">▶</span>
+          <span>舞力社区<small>DANCE POWER</small></span>
+        </a>
+        <p>舞力社区官方网站，专注性感美女热舞的原创影像与创作者社区，持续运营、正版高清、品质优先，致力于构建值得信赖的舞蹈内容生态。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#hd-focus">焦点视频</a></li>
+          <li><a href="#hd-hot">热门内容</a></li>
+          <li><a href="#hd-topics">专题企划</a></li>
+          <li><a href="#hd-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#hd-deep">品牌故事</a></li>
+          <li><a href="#hd-creators">创作者矩阵</a></li>
+          <li><a href="#hd-dynamics">企业动态</a></li>
+          <li><a href="#hd-contact">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与社区</h4>
+        <ul>
+          <li><a href="#hd-contact">投稿入口</a></li>
+          <li><a href="#hd-idea">创作攻略</a></li>
+          <li><a href="#hd-community">用户评价</a></li>
+          <li><a href="#hd-contact">合作联系</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="hd-footer-bottom">
+      <span>© 2026 舞力社区 官方网站 · 版权所有 · 持续运营中</span>
+      <span>品牌备案：舞力社区原创内容中心 · 内容审核与版权声明</span>
+    </div>
+  </div>
+</footer>
+
+<button class="hd-top-btn" id="hdTopBtn" aria-label="回到顶部">↑</button>
+<div class="hd-toast" id="hdToast"></div>
+
+<!-- 通用模态 -->
+<div class="hd-modal" id="hdModal">
+  <div class="hd-modal-card">
+    <button class="hd-modal-close" id="hdModalClose" aria-label="关闭">✕</button>
+    <div id="hdModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('hdToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('hd-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('hd-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('hdBurger');
+  var nav = document.getElementById('hdNav');
+  burger.addEventListener('click', function(){
+    nav.classList.toggle('hd-open');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('hd-open'); }
+  });
+
+  /* 搜索反馈 */
+  var input = document.getElementById('hdSearchInput');
+  var tip = document.getElementById('hdSearchTip');
+  var searchBtn = document.getElementById('hdSearchBtn');
+  var topics = ['编舞','双人镜像','基础发力','城市舞步','幕后拍摄','舞者访谈','队形实验','节拍训练'];
+  function doSearch(){
+    var q = input.value.trim();
+    if(!q){
+      tip.innerHTML = '试试搜索：<b>编舞</b>、<b>教程</b>、<b>城市舞步</b>';
+    } else {
+      var hit = topics.filter(function(t){ return t.indexOf(q) !== -1 || q.indexOf(t) !== -1; });
+      if(hit.length){
+        tip.innerHTML = '已为「<b>' + q + '</b>」找到 ' + hit.length + ' 个相关内容方向：<br>' + hit.join('、');
+      } else {
+        tip.innerHTML = '暂未找到与「<b>' + q + '</b>」直接匹配的内容，推荐浏览热门视频流或创作者矩阵。';
+      }
+    }
+    tip.classList.add('hd-show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  input.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ doSearch(); } });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.hd-search')){ tip.classList.remove('hd-show'); }
+  });
+
+  /* 点赞 / 收藏 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('[data-hd-like]');
+    if(like){
+      var numEl = like.querySelector('.hd-act-num');
+      var txt = numEl.textContent.replace(/[^\d.]/g,'');
+      var unit = numEl.textContent.replace(/[\d.]/g,'');
+      var val = parseFloat(txt) || 0;
+      if(like.classList.contains('hd-on')){
+        like.classList.remove('hd-on');
+        like.querySelector('.hd-act-ico').textContent = '♡';
+        val = Math.max(0, val - 0.1);
+      } else {
+        like.classList.add('hd-on');
+        like.querySelector('.hd-act-ico').textContent = '♥';
+        val = val + 0.1;
+      }
+      numEl.textContent = val.toFixed(1) + unit;
+      toast(like.classList.contains('hd-on') ? '已支持这支作品' : '已取消支持');
+    }
+    var fav = e.target.closest('[data-hd-fav]');
+    if(fav){
+      var on = fav.classList.toggle('hd-on');
+      fav.querySelector('.hd-act-ico').textContent = on ? '★' : '☆';
+      toast(on ? '已加入收藏' : '已移出收藏');
+    }
+    var share = e.target.closest('[data-hd-share]');
+    if(share){
+      openModal('share');
+    }
+    var modalBtn = e.target.closest('[data-hd-modal]');
+    if(modalBtn){
+      openModal(modalBtn.getAttribute('data-hd-modal'));
+    }
+  });
+
+  /* 筛选 */
+  var filterBox = document.getElementById('hdFilter');
+  var cards = document.querySelectorAll('#hdVGrid .hd-vcard');
+  filterBox.addEventListener('click', function(e){
+    var chip = e.target.closest('.hd-chip');
+    if(!chip) return;
+    filterBox.querySelectorAll('.hd-chip').forEach(function(c){ c.classList.remove('hd-chip-on'); });
+    chip.classList.add('hd-chip-on');
+    var key = chip.getAttribute('data-hd-filter');
+    cards.forEach(function(card){
+      var show = key === 'all' || card.getAttribute('data-hd-cat') === key;
+      card.classList.toggle('hd-hide', !show);
+    });
+    toast(key === 'all' ? '已显示全部热门内容' : '已筛选「' + key + '」相关内容');
+  });
+
+  /* 创作者卡片 */
+  document.querySelectorAll('.hd-creator').forEach(function(card){
+    card.addEventListener('click', function(){
+      var name = card.getAttribute('data-hd-creator');
+      openCreator(name);
+    });
+  });
+
+  var creatorData = {
+    '沈绯': {role:'编舞 / 舞台表现', works:'96', fans:'24.1万', bio:'七年编舞经验，擅长把情绪写进队形。她的作品强调层次与呼吸感，常以群舞调度讲述一个完整的小故事，是社区中口碑稳定的长期创作者。'},
+    '陈一舞': {role:'教学 / 基础训练', works:'142', fans:'31.6万', bio:'专注零基础教学，把复杂动作拆解为可执行的步骤。她的教程强调安全与循序渐进，是许多新舞者的第一站。'},
+    '苏野': {role:'城市即兴 / 在地记录', works:'78', fans:'17.8万', bio:'常年在城市里边走边跳，以街头的声音作为伴奏。她的城市舞步系列已覆盖多座城市，用身体记录在地文化。'},
+    '阿衡': {role:'影像 / 拍摄后期', works:'64', fans:'12.3万', bio:'曾从事广告摄影，现专注舞蹈影像。擅长用光线与机位捕捉动作的质感，代表作品多聚焦拍摄幕后的专业细节。'}
+  };
+
+  /* 模态 */
+  var modal = document.getElementById('hdModal');
+  var modalBody = document.getElementById('hdModalBody');
+  var modalClose = document.getElementById('hdModalClose');
+  function openModal(type){
+    var html = '';
+    if(type === 'share'){
+      html = '<h3>分享这支内容</h3><p>把喜欢的热舞作品分享给同好，让更多人看到创作者的用心。</p>' +
+        '<div class="hd-share-list"><button data-hd-copy>复制链接</button><button data-hd-shareto="微信">微信</button><button data-hd-shareto="微博">微博</button><button data-hd-shareto="QQ">QQ</button></div>';
+    } else if(type === 'submit'){
+      html = '<h3>投稿入口</h3><p>请准备好作品标题、舞种、创作说明与视频文件，官方将在 3 个工作日内完成初审。若使用第三方音乐，请注明来源。</p>' +
+        '<div class="hd-modal-actions"><button class="hd-btn hd-btn-main" data-hd-submit-ok>提交投稿信息</button><button class="hd-btn hd-btn-ghost" data-hd-modal-close>稍后再说</button></div>';
+    } else if(type === 'comment'){
+      html = '<h3>评论与反馈</h3><p>社区共收到 428 条讨论。你可以留下对动作编排或镜头表达的看法，官方会定期汇总高价值建议反馈给创作者。</p>' +
+        '<div class="hd-modal-actions"><button class="hd-btn hd-btn-main" data-hd-submit-ok>写下我的看法</button><button class="hd-btn hd-btn-ghost" data-hd-modal-close>关闭</button></div>';
+    } else {
+      html = '<h3>提示</h3><p>更多内容持续更新中，欢迎关注企业动态获取官方发布信息。</p>';
+    }
+    modalBody.innerHTML = html;
+    modal.classList.add('hd-show');
+  }
+  function openCreator(name){
+    var d = creatorData[name];
+    if(!d) return;
+    modalBody.innerHTML = '<h3>' + name + '</h3><p>擅长领域：' + d.role + '｜作品 ' + d.works + ' 支｜关注 ' + d.fans + '</p><p>' + d.bio + '</p>' +
+      '<div class="hd-modal-actions"><button class="hd-btn hd-btn-main" data-hd-share>分享主页</button><button class="hd-btn hd-btn-ghost" data-hd-modal-close>关闭</button></div>';
+    modal.classList.add('hd-show');
+  }
+  modalClose.addEventListener('click', function(){ modal.classList.remove('hd-show'); });
+  modal.addEventListener('click', function(e){
+    if(e.target === modal){ modal.classList.remove('hd-show'); }
+    if(e.target.closest('[data-hd-modal-close]')){ modal.classList.remove('hd-show'); }
+    var copy = e.target.closest('[data-hd-copy]');
+    if(copy){
+      var link = 'https://dancepower.example/focus';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('链接已复制'); }, function(){ toast('复制失败，请手动分享'); });
+      } else {
+        toast('请长按地址栏复制页面链接');
+      }
+    }
+    var to = e.target.closest('[data-hd-shareto]');
+    if(to){ toast('已生成' + to.getAttribute('data-hd-shareto') + '分享提示'); }
+    var ok = e.target.closest('[data-hd-submit-ok]');
+    if(ok){ modal.classList.remove('hd-show'); toast('已收到，我们会尽快与您联系'); }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('hdTopBtn');
+  window.addEventListener('scroll', function(){
+    topBtn.classList.toggle('hd-show', window.scrollY > 520);
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+            </html>
